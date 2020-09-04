@@ -7,11 +7,6 @@ app.get('/', (req, res) => {
     res.send('Hello, again!')
 })
 
-app.post('/greeter', (req, res) => {
-    let [name] = req.body;
-    res.send(`Name: ${name}`)
-})
-
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`)
 }) 

@@ -7,8 +7,8 @@ app.get('/', function (req, res) {
     res.send('Hello, again!');
 });
 app.post('/greeter', function (req, res) {
-    var name = req.body[0];
-    res.send("Name: " + name);
+    console.log(req);
+    res.send("Hello");
 });
 app.listen(PORT, function () {
     console.log("Server listening on " + PORT);
